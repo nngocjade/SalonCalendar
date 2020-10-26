@@ -7,3 +7,15 @@
   margin: 0;
   font-family: "Quicksand", sans-serif;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
