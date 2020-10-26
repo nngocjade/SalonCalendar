@@ -9,49 +9,61 @@
  <title>schedule form</title>
 </head>
 <body>
- <main class="form_container">
-  <form action="">
-   <!-- Form psuedo code -->
-  
-   <!-- row 1: div > clock icon + date + start hour + “ - “ p + end hour -->
-   <div class="dateTime_wrapper">
-    <i class="fa fa-clock-o"></i>
-    <input type="date" name="date" id="date">
-    <input type="hour" name="start_hour" id="start_hour">
-    <p id="hour_dash"> - </p>
-    <input type="hour" name="end_hour" id="end_hour">
-   </div>
-   <!-- row 2: p - Please fill in the required fields (astric -->
-   <!-- row 3: label: client first name + input -->
+ <main>
+  <section class="form_container">
+   <form action="">
+    <!-- Form psuedo code -->
    
-   <label for="f_name">Client First Name<span class="astrick">*</span></label>
-   <input type="text" id="f_name" name="f_name" aria-required=”true”>
-   <!-- row 4: label: client last name + input -->
-   <label for="l_name">Client Last Name<span class="astrick">*</span></label>
-   <input type="text" id="l_name" name="l_name" aria-required=”true”>
-   <!-- row 5: label: serice : input -->
-   <label for="service">Service<span class="astrick">*</span></label>
-   <input type="number" id="service" name="service" aria-required=”true”>
-   <!-- row 6: label: phone number + input -->
-   <label for="p_num">Phone Number<span class="astrick">*</span>
-   </label>
-   <input type="text" id="p_num" name="p_num" aria-required=”true”>
-   <!-- row 7: label: technician name(optional) + input -->
-   <label for="technician_name">Technician Name (Optional)</label>
-   <input type="text" id="technician_name" name="technician_name" aria-required=”true”>
-  </form>
-  <!-- row 8: comment box -->
-  <textarea rows="4" cols="50" name="comment" form="usrform">
-   Enter text here...</textarea>
-  <!-- row 9: div - cancel and save button -->
-  <div class="c_s_button_wrapper">
-   <button class="btn">
-    <a href="">cancel</a>
-   </button>
-   <button class="btn">
-    <a href="">save</a>
-   </button>
-  </div>
+    <!-- row 1: div > clock icon + date + start hour + “ - “ p + end hour -->
+    <div class="dateTime_wrapper">
+     <i class="fa fa-clock-o"></i>
+     <input type="date" name="date" id="date">
+     <input type="hour" name="start_hour" id="start_hour">
+     <p id="hour_dash"> - </p>
+     <input type="hour" name="end_hour" id="end_hour">
+    </div>
+    <!-- row 2: p - Please fill in the required fields (astric -->
+    <!-- row 3: label: client first name + input -->
+    <div id="f_name" class="label_input_wrapper">
+     <label for="f_name">Client First Name<span class="astrick">*</span></label>
+     <input type="text" id="f_name" name="f_name" aria-required=”true”>
+    </div>
+    <!-- row 4: label: client last name + input -->
+    <div id="l_name" class="label_input_wrapper">
+     <label for="l_name">Client Last Name<span class="astrick">*</span></label>
+     <input type="text" id="l_name" name="l_name" aria-required=”true”>
+    </div>
+   
+    <!-- row 5: label: serice : input -->
+    <div id="service" class="label_input_wrapper">
+     <label for="service">Service<span class="astrick">*</span></label>
+     <input type="number" id="service" name="service" aria-required=”true”>
+    </div>
+    <!-- row 6: label: phone number + input -->
+    <div id="p_num" class="label_input_wrapper">
+     <label for="p_num">Phone Number<span class="astrick">*</span>
+     </label>
+     <input type="text" id="p_num" name="p_num" aria-required=”true”>
+    </div>
+    <!-- row 7: label: technician name(optional) + input -->
+    <div id="technician_name" class="label_input_wrapper">
+     <label for="technician_name">Technician Name (Optional)</label>
+     <input type="text" id="technician_name" name="technician_name" aria-required=”true”>
+    </div>
+   </form>
+   <!-- row 8: comment box -->
+   <textarea class="comment_box" rows="4" cols="50" name="comment" form="usrform">
+      Write comment here...</textarea>
+   <!-- row 9: div - cancel and save button -->
+   <div class="c_s_button_wrapper">
+    <button class="btn">
+     <a href="">cancel</a>
+    </button>
+    <button class="btn">
+     <a href="">save</a>
+    </button>
+   </div>
+  </section>
  </main>
 </body>
 </html>
