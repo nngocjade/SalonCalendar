@@ -5,9 +5,33 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="./css/main.css">
  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <title>schedule form</title>
 </head>
 <body>
+ <form action="">
+  <!-- Form psuedo code -->
+  
+  <!-- row 1: div > clock icon + date + start hour + “ - “ p + end hour -->
+  <div class="dateTime_wrapper">
+   <i class="fa fa-clock-o"></i>
+   <input type="date" name="date" id="date">
+   <input type="hour" name="start_hour" id="start_hour">
+   <p id="hour_dash"> - </p>
+   <input type="hour" name="end_hour" id="end_hour">
+  </div>
+  <!-- row 2: p - Please fill in the required fields (astric -->
+  <!-- row 3: label: client first name + input -->
+   <label for="f_name">Client First Name</label>
+   <input type="text" id="f_name" name="f_name" aria-required=”true”>
+  <!-- row 4: label: client last name + input -->
+  <!-- row 5: label: serice : input -->
+  <!-- row 6: label: phone number + input -->
+  <!-- row 7: label: technician name(optional) + input -->
+  <!-- row 8: comment box -->
+  <!-- row 9: div - cancel and save button -->
  
+
+ </form>
 </body>
 </html>
