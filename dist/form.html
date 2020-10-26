@@ -22,16 +22,33 @@
   </div>
   <!-- row 2: p - Please fill in the required fields (astric -->
   <!-- row 3: label: client first name + input -->
-   <label for="f_name">Client First Name</label>
+   <label for="f_name">Client First Name<span class="astrick">*</span></label>
    <input type="text" id="f_name" name="f_name" aria-required=”true”>
   <!-- row 4: label: client last name + input -->
+   <label for="l_name">Client Last Name<span class="astrick">*</span></label>
+   <input type="text" id="l_name" name="l_name" aria-required=”true”>
   <!-- row 5: label: serice : input -->
+   <label for="service">Service<span class="astrick">*</span></label>
+   <input type="number" id="service" name="service" aria-required=”true”>
   <!-- row 6: label: phone number + input -->
+   <label for="p_num">Phone Number<span class="astrick">*</span>
+   </label>
+   <input type="text" id="p_num" name="p_num" aria-required=”true”>
   <!-- row 7: label: technician name(optional) + input -->
-  <!-- row 8: comment box -->
-  <!-- row 9: div - cancel and save button -->
- 
-
+  <label for="technician_name">Technician Name (Optional)</label>
+  <input type="text" id="technician_name" name="technician_name" aria-required=”true”>
  </form>
+ <!-- row 8: comment box -->
+ <textarea rows="4" cols="50" name="comment" form="usrform">
+ Enter text here...</textarea>
+ <!-- row 9: div - cancel and save button -->
+ <div class="c_s_button_wrapper">
+  <button class="btn">
+   <a href="">cancel</a>
+  </button>
+  <button class="btn">
+   <a href="">savesave</a>
+  </button>
+ </div>
 </body>
 </html>
