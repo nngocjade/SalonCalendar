@@ -90,6 +90,8 @@
   width: 100%;
   margin-bottom: 1em;
   padding-top: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #cccbcb;
 }
 
 .form_container .c_s_button_wrapper {
@@ -125,6 +127,14 @@
   color: #414141;
 }
 
+.form_container .c_s_button_wrapper #cancelBtn:hover {
+  background-color: #e5e5e5;
+}
+
+.form_container .c_s_button_wrapper #cancelBtn:hover a {
+  color: white;
+}
+
 .form_container .c_s_button_wrapper #saveBtn {
   background-color: #f5d8ff;
   border: none;
@@ -133,6 +143,14 @@
 
 .form_container .c_s_button_wrapper #saveBtn a {
   color: #414141;
+}
+
+.form_container .c_s_button_wrapper #saveBtn:hover {
+  background-color: #e8a5ff;
+}
+
+.form_container .c_s_button_wrapper #saveBtn:hover a {
+  color: white;
 }
 
 * {

@@ -52,6 +52,8 @@
     width: 100%;
     margin-bottom: 1em;
     padding-top: 0.5em;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 203, 203);
   }
   .c_s_button_wrapper {
     width: 100%;
@@ -73,6 +75,12 @@
       a {
         color: rgb(65, 65, 65);
       }
+      &:hover{
+       background-color: lighten($color: rgb(204, 203, 203), $amount: 10%);
+       a{
+        color: white;
+       }
+      }
     }
     #saveBtn {
       background-color: #f5d8ff;
@@ -80,6 +88,12 @@
       padding: 0.4em;
       a {
         color: rgb(65, 65, 65);
+      }
+      &:hover{
+       background-color: darken($color: #f5d8ff, $amount: 10%);
+       a{
+        color: white;
+       }
       }
     }
   }
