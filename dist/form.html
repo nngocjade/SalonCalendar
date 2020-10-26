@@ -17,12 +17,13 @@
     <!-- row 1: div > clock icon + date + start hour + “ - “ p + end hour -->
     <div class="dateTime_wrapper">
      <i class="fa fa-clock-o"></i>
-     <input type="date" name="date" id="date">
-     <input type="hour" name="start_hour" id="start_hour">
+     <input class="date_input" type="date" name="date" id="date">
+     <input class="hour_input" type="hour" name="start_hour" id="start_hour">
      <p id="hour_dash"> - </p>
-     <input type="hour" name="end_hour" id="end_hour">
+     <input class="hour_input" type="hour" name="end_hour" id="end_hour">
     </div>
     <!-- row 2: p - Please fill in the required fields (astric -->
+    <p id="requiredFieldWarning"><span>*</span> Please fill in the required fields</p>
     <!-- row 3: label: client first name + input -->
     <div id="f_name" class="label_input_wrapper">
      <label for="f_name">Client First Name<span class="astrick">*</span></label>
@@ -56,10 +57,10 @@
       Write comment here...</textarea>
    <!-- row 9: div - cancel and save button -->
    <div class="c_s_button_wrapper">
-    <button class="btn">
+    <button id="cancelBtn" class="btn">
      <a href="">cancel</a>
     </button>
-    <button class="btn">
+    <button id="saveBtn" class="btn">
      <a href="">save</a>
     </button>
    </div>
