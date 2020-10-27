@@ -20,14 +20,7 @@ $break-lg: 1200px;
     border-radius: 5px;
     height: 25px;
   }
-  #requiredFieldWarning {
-    color: darken($color: #f5d8ff, $amount: 30%);
-    font-size: 0.7em;
-    text-align: center;
-    @media screen and (min-width: $break-md) {
-      text-align: left;
-    }
-  }
+
   form {
     width: 100%;
     height: 70%;
@@ -52,8 +45,7 @@ $break-lg: 1200px;
         flex-direction: row;
         margin-bottom: 0;
       }
-      input,
-      p {
+      input {
         text-align: center;
       }
       .icon_date_wrapper {
@@ -81,14 +73,26 @@ $break-lg: 1200px;
         .hour_input {
           width: 50%;
         }
+        p {
+          margin: 0 0.5em;
+        }
         @media screen and (min-width: $break-md) {
           width: 53%;
           flex-direction: row;
-
           p {
             margin: 0 0.5em;
           }
         }
+      }
+    }
+    #requiredFieldWarning {
+      color: darken($color: #f5d8ff, $amount: 30%);
+      font-size: 0.7em;
+      text-align: center;
+      margin: 1em;
+      @media screen and (min-width: $break-md) {
+        text-align: left;
+        margin: 0;
       }
     }
     .label_input_wrapper {
@@ -97,11 +101,19 @@ $break-lg: 1200px;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 0.5em;
+      label {
+        margin-bottom: 0.5em;
+      }
       input {
         width: 100%;
       }
       @media screen and (min-width: $break-md) {
         flex-direction: row;
+        margin-bottom: 0;
+        label {
+          margin-bottom: 0;
+        }
         input {
           width: 50%;
         }
@@ -119,8 +131,12 @@ $break-lg: 1200px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    @media screen and (min-width: $break-md) {
+      justify-content: flex-end;
+    }
     margin: 0.5em 0;
+
     button {
       width: 6rem;
       padding: 0.3em;
