@@ -12,9 +12,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #cccbcb;
   border-radius: 5px;
-  padding: 3em;
+  padding: 3em 3em 6em 3em;
+  -webkit-box-shadow: 1px 1px 20px 4px #d6d6d6;
+          box-shadow: 1px 1px 20px 4px #d6d6d6;
 }
 
 .form_container input {
@@ -24,7 +25,7 @@
 }
 
 .form_container #requiredFieldWarning {
-  color: red;
+  color: #ce3fff;
   font-size: 0.7em;
 }
 
@@ -44,6 +45,10 @@
   margin-bottom: 1.6em;
 }
 
+.form_container form .astrick {
+  color: #ce3fff;
+}
+
 .form_container form .dateTime_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,11 +59,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #cccbcb;
+}
+
+.form_container form .dateTime_wrapper input {
+  text-align: center;
 }
 
 .form_container form .dateTime_wrapper .fa.fa-clock-o {
   font-size: 30px;
-  color: #cccbcb;
 }
 
 .form_container form .dateTime_wrapper .date_input {
@@ -105,6 +114,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: .5em 0;
 }
 
 .form_container .c_s_button_wrapper button {
@@ -116,6 +126,7 @@
 
 .form_container .c_s_button_wrapper button a {
   text-decoration: none;
+  color: #414141;
 }
 
 .form_container .c_s_button_wrapper #cancelBtn {
@@ -123,12 +134,8 @@
   border: 1px solid #cccbcb;
 }
 
-.form_container .c_s_button_wrapper #cancelBtn a {
-  color: #414141;
-}
-
 .form_container .c_s_button_wrapper #cancelBtn:hover {
-  background-color: #e5e5e5;
+  background-color: #cccbcb;
 }
 
 .form_container .c_s_button_wrapper #cancelBtn:hover a {
@@ -139,10 +146,6 @@
   background-color: #f5d8ff;
   border: none;
   padding: 0.4em;
-}
-
-.form_container .c_s_button_wrapper #saveBtn a {
-  color: #414141;
 }
 
 .form_container .c_s_button_wrapper #saveBtn:hover {

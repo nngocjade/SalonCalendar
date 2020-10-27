@@ -4,16 +4,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgb(204, 203, 203);
   border-radius: 5px;
-  padding: 3em;
+  padding: 3em 3em 6em 3em;
+  box-shadow: 1px 1px 20px 4px rgb(214, 214, 214);
   input {
     border: 1px solid rgb(204, 203, 203);
     border-radius: 5px;
     height: 25px;
   }
   #requiredFieldWarning {
-    color: red;
+    color:darken($color: #f5d8ff, $amount: 30%);
     font-size: 0.7em;
   }
   form {
@@ -23,13 +23,19 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 1.6em;
+    .astrick{
+    color:darken($color: #f5d8ff, $amount: 30%);
+    }
     .dateTime_wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      color: rgb(204, 203, 203);
+      input{
+       text-align: center;
+      }
       .fa.fa-clock-o {
         font-size: 30px;
-        color: rgb(204, 203, 203);
       }
       .date_input {
         width: 40%;
@@ -60,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin: .5em 0;
     button {
       width: 6rem;
       padding: 0.3em;
@@ -67,33 +74,28 @@
       border-radius: 5px;
       a {
         text-decoration: none;
+        color: rgb(65, 65, 65);
       }
     }
     #cancelBtn {
       background-color: transparent;
       border: 1px solid rgb(204, 203, 203);
-      a {
-        color: rgb(65, 65, 65);
-      }
-      &:hover{
-       background-color: lighten($color: rgb(204, 203, 203), $amount: 10%);
-       a{
-        color: white;
-       }
+      &:hover {
+        background-color: rgb(204, 203, 203);
+        a {
+          color: white;
+        }
       }
     }
     #saveBtn {
       background-color: #f5d8ff;
       border: none;
       padding: 0.4em;
-      a {
-        color: rgb(65, 65, 65);
-      }
-      &:hover{
-       background-color: darken($color: #f5d8ff, $amount: 10%);
-       a{
-        color: white;
-       }
+      &:hover {
+        background-color: darken($color: #f5d8ff, $amount: 10%);
+        a {
+          color: white;
+        }
       }
     }
   }
