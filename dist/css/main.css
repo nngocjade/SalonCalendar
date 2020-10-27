@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 .form_container {
-  width: 60vw;
-  height: 90vmin;
+  width: 60vmin;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13,14 +15,13 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
-  padding: 3em 3em 6em 3em;
+  padding: 3em 3em 3em 3em;
   -webkit-box-shadow: 1px 1px 20px 4px #d6d6d6;
           box-shadow: 1px 1px 20px 4px #d6d6d6;
 }
 
 @media screen and (min-width: 768px) {
   .form_container {
-    width: 30vw;
     height: 65vmin;
   }
 }
@@ -34,6 +35,13 @@
 .form_container #requiredFieldWarning {
   color: #ce3fff;
   font-size: 0.7em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .form_container #requiredFieldWarning {
+    text-align: left;
+  }
 }
 
 .form_container form {
@@ -49,7 +57,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 1.6em;
+  margin-bottom: 1em;
 }
 
 .form_container form .astrick {
@@ -58,9 +66,7 @@
 
 .form_container form .dateTime_wrapper {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +81,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #cccbcb;
+  margin-bottom: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,6 +91,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0;
   }
 }
 
