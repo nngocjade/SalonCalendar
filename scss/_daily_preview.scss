@@ -1,12 +1,40 @@
 .daily_preview_container {
   height: 80vh;
   flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
-  .schedule_wrapper {
-    overflow-y: scroll;
   }
-  .am, .pm, .thirty{
-   color: gray;
+  .schedule_wrapper {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    @include flexBox(row, space-between, center);
+    .hour_wrapper {
+      height: 100%;
+    }
+   
+    .col.wrapper{
+     width: 20%;
+     height: 100%;
+     position: relative;
+      .technician.btn{
+     position: fixed;
+     top: 200px;
+     z-index: 1;
+     width: 20%;
+     margin: 0;
+    }
+     .time_slot.wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+    }
+    } 
+  }
+  .am,
+  .pm,
+  .thirty {
+    color: gray;
   }
 }
