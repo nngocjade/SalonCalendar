@@ -4,37 +4,45 @@
   justify-content: space-between;
   position: absolute;
   bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 216, 255, 1) 150%
+  );
+}
+.schedule_wrapper {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  @include flexBox(row, space-between, center);
+  .hour_wrapper {
+    height: 100%;
   }
-  .schedule_wrapper {
-    width: 100%;
-    height: 80%;
-    overflow-y: scroll;
-    @include flexBox(row, space-between, center);
-    .hour_wrapper {
-      height: 100%;
+
+  .col.wrapper {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    .technician.btn {
+      position: fixed;
+      top: 200px;
+      z-index: 1;
+      width: 20%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: rgba(255, 255, 255, 0.651);
+      border: none;
     }
-   
-    .col.wrapper{
-     width: 20%;
-     height: 100%;
-     position: relative;
-      .technician.btn{
-     position: fixed;
-     top: 200px;
-     z-index: 1;
-     width: 20%;
-     margin: 0;
-    }
-     .time_slot.wrapper {
+    .time_slot.wrapper {
       width: 100%;
       height: 100%;
-      background-color: gray;
+      background-color: rgba(255, 255, 255, 0.747);
     }
-    } 
   }
-  .am,
-  .pm,
-  .thirty {
-    color: gray;
-  }
+}
+.am,
+.pm,
+.thirty {
+  color: gray;
 }
