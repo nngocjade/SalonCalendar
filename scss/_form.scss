@@ -2,17 +2,16 @@ $break-sm: 320px;
 $break-md: 900px;
 $break-lg: 1200px;
 
+@import "config";
+
 .form_container {
   width: 60vmin;
   height: fit-content;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include flexBox(column, space-between, center);
   border-radius: 5px;
   padding: 2em;
   box-shadow: 1px 1px 20px 4px rgb(214, 214, 214);
   @media screen and (min-width: $break-md) {
-    // width: 30vw;
     height: 65vmin;
   }
   input {
@@ -28,9 +27,7 @@ $break-lg: 1200px;
   form {
     width: 100%;
     height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexBox(column, space-between, center);
     margin-bottom: 1em;
     .astrick {
       color: darken($color: #f5d8ff, $amount: 30%);
@@ -38,12 +35,9 @@ $break-lg: 1200px;
     .dateTime_wrapper {
       width: 100%;
       height: 70px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
       color: rgb(204, 203, 203);
       margin-bottom: 0.5em;
+      @include flexBox(column, space-between, center);
       @media screen and (min-width: $break-md) {
         height: 30px;
         flex-direction: row;
@@ -54,9 +48,7 @@ $break-lg: 1200px;
       }
       .icon_date_wrapper {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexBox(row, space-between, center);
         .fa.fa-clock-o {
           font-size: 30px;
         }
@@ -92,7 +84,6 @@ $break-lg: 1200px;
     #requiredFieldWarning {
       color: darken($color: #f5d8ff, $amount: 30%);
       font-size: 0.7em;
-      text-align: center;
       margin: 1em 1em 0 1em;
       @media screen and (min-width: $break-md) {
         margin-top: 0;
@@ -101,9 +92,7 @@ $break-lg: 1200px;
     .label_input_wrapper {
       width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      @include flexBox(column, space-between, center);
       label {
         visibility: hidden;
       }
@@ -137,9 +126,7 @@ $break-lg: 1200px;
   }
   .c_s_button_wrapper {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(row, center, center);
     margin: 0.5em 0;
 
     button {
