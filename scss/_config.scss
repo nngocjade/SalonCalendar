@@ -1,7 +1,14 @@
+$accentColor: #f5d8ff;
+$lightGray: rgb(214, 214, 214);
+$darkGray: rgb(65, 65, 65);
 
-@mixin flexBox($direction, $justify-content, $align-items){
- display: flex;
- flex-direction: $direction;
- justify-content: $justify-content;
- align-items: $align-items;
+$break-sm: 320px;
+$break-md: 900px;
+$break-lg: 1200px;
+
+@mixin flexBox($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }

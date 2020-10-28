@@ -1,0 +1,40 @@
+button {
+  width: 6rem;
+  padding: 0.3em;
+  margin-left: 1em;
+  border-radius: 5px;
+  border: 1px solid $lightGray;
+  background-color: transparent;
+  a {
+    text-decoration: none;
+    color: $darkGray;
+  }
+}
+
+.c_s_button_wrapper {
+  width: 100%;
+  @include flexBox(row, center, center);
+  margin: 0.5em 0;
+
+  #cancelBtn {
+    background-color: transparent;
+    &:hover {
+      background-color: $lightGray;
+      a {
+        color: white;
+      }
+    }
+  }
+
+  #saveBtn {
+    background-color: $accentColor;
+    border: none;
+    padding: 0.4em;
+    &:hover {
+      background-color: darken($color: $accentColor, $amount: 10%);
+      a {
+        color: white;
+      }
+    }
+  }
+}

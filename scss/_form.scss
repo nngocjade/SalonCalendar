@@ -1,8 +1,5 @@
-$break-sm: 320px;
-$break-md: 900px;
-$break-lg: 1200px;
-
 @import "config";
+@import "buttons";
 
 .form_container {
   width: 60vmin;
@@ -10,17 +7,18 @@ $break-lg: 1200px;
   @include flexBox(column, space-between, center);
   border-radius: 5px;
   padding: 2em;
-  box-shadow: 1px 1px 20px 4px rgb(214, 214, 214);
+  box-shadow: 1px 1px 20px 4px $lightGray;
+  color: $lightGray;
   @media screen and (min-width: $break-md) {
     height: 65vmin;
   }
   input {
-    border: 1px solid rgb(204, 203, 203);
+    border: 1px solid $lightGray;
     border-radius: 5px;
     height: 25px;
     padding: 0 0.5em;
     &::-webkit-input-placeholder {
-      color: rgb(204, 203, 203);
+      color: $lightGray;
     }
   }
 
@@ -30,12 +28,12 @@ $break-lg: 1200px;
     @include flexBox(column, space-between, center);
     margin-bottom: 1em;
     .astrick {
-      color: darken($color: #f5d8ff, $amount: 30%);
+      color: darken($color: $accentColor, $amount: 30%);
     }
     .dateTime_wrapper {
       width: 100%;
       height: 70px;
-      color: rgb(204, 203, 203);
+      color: $lightGray;
       margin-bottom: 0.5em;
       @include flexBox(column, space-between, center);
       @media screen and (min-width: $break-md) {
@@ -82,7 +80,7 @@ $break-lg: 1200px;
       }
     }
     #requiredFieldWarning {
-      color: darken($color: #f5d8ff, $amount: 30%);
+      color: darken($color: $accentColor, $amount: 30%);
       font-size: 0.7em;
       margin: 1em 1em 0 1em;
       @media screen and (min-width: $break-md) {
@@ -121,44 +119,7 @@ $break-lg: 1200px;
     padding-top: 0.5em;
     padding-left: 0.5em;
     border-radius: 5px;
-    border: 1px solid rgb(204, 203, 203);
-    color: rgb(204, 203, 203);
-  }
-  .c_s_button_wrapper {
-    width: 100%;
-    @include flexBox(row, center, center);
-    margin: 0.5em 0;
-
-    button {
-      width: 6rem;
-      padding: 0.3em;
-      margin-left: 1em;
-      border-radius: 5px;
-      a {
-        text-decoration: none;
-        color: rgb(65, 65, 65);
-      }
-    }
-    #cancelBtn {
-      background-color: transparent;
-      border: 1px solid rgb(204, 203, 203);
-      &:hover {
-        background-color: rgb(204, 203, 203);
-        a {
-          color: white;
-        }
-      }
-    }
-    #saveBtn {
-      background-color: #f5d8ff;
-      border: none;
-      padding: 0.4em;
-      &:hover {
-        background-color: darken($color: #f5d8ff, $amount: 10%);
-        a {
-          color: white;
-        }
-      }
-    }
+    border: 1px solid $lightGray;
+    color: $lightGray;
   }
 }
