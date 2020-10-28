@@ -12,9 +12,10 @@
  <main class="daily_preview_container">
   <div class="icon_wrapper">
    <!-- icon -->
-   <i class="fas fa-chevron-up"></i>
+   <i class="fas fa-chevron-down closed"></i>
+   <i class="fas fa-chevron-up open"></i>
   </div>
-  <div >
+  <div class="technician_wrapper">
    <!-- technician names -->
    <button class="technician btn">Mimi</button>
    <button class="technician btn">Jade</button>
@@ -22,8 +23,37 @@
    <button class="technician btn">Nguyen</button>
   </div>
   <!-- 5 columns  -->
-  <!-- Col 1, hours  -->
-  <!-- Col 2 - 5, time slots -->
+  <section class="schedule_wrapper">
+   <!-- Col 1, hours  -->
+   <div class="hour_wrapper">
+    <!-- increment by 30 mins, 9am - 7pm -->
+    <ul>
+     <li>9:00 am</li>
+     <li><span class="thirty">9:30 am</span></li>
+     <li>10:00 am</li>
+     <li><span class="thirty">10:30 am</span></li>
+     <li>11:00 am</li>
+     <li><span class="thirty">11:30 am</span></li>
+     <li>12:00 pm</li>
+     <li><span class="thirty">12:30 pm</span></li>
+     <li>1:00 pm</li>
+     <li><span class="thirty">1:30 pm</span></li>
+     <li>2:00 pm</li>
+     <li><span class="thirty">2:30 pm</span></li>
+     <li>3:00 pm</li>
+     <li><span class="thirty">3:30 pm</span></li>
+     <li>4:00 pm</li>
+     <li><span class="thirty">4:30 pm</span></li>
+     <li>5:00 pm</li>
+     <li><span class="thirty">5:30 pm</span></li>
+     <li>6:00 pm</li>
+     <li><span class="thirty">6:30 pm</span></li>
+     <li>7:00 pm</li>
+    </ul>
+   </div>
+   <!-- Col 2 - 5, time slots -->
+  </section>
+  
  </main>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.daily_preview_container {
+  height: 80vh;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  .schedule_wrapper {
+    overflow-y: scroll;
+  }
+  .am, .pm, .thirty{
+   color: gray;
+  }
+}

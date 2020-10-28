@@ -21,3 +21,11 @@ main {
   height: 100%;
   @include flexBox(row, center, center);
 }
+
+ul{
+  li{
+   list-style-type: none;
+   padding: .5em;
+   text-align: center;
+  }
+}
