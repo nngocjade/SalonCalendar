@@ -329,6 +329,15 @@ button a {
   height: 100%;
 }
 
+.schedule_wrapper .hour_wrapper .fifteen,
+.schedule_wrapper .hour_wrapper .fortyFive {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 1.5px;
+  text-align: center;
+  background-color: gray;
+}
+
 .schedule_wrapper .col.wrapper {
   width: 20%;
   height: 100%;
@@ -336,8 +345,9 @@ button a {
 }
 
 .schedule_wrapper .col.wrapper .technician.btn {
+  width: calc(20% - 6px);
   position: fixed;
-  top: 200px;
+  top: 220px;
   z-index: 1;
   width: 20%;
   margin: 0;
