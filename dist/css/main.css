@@ -347,14 +347,15 @@ button a {
 .schedule_wrapper .col.wrapper .technician.btn {
   width: calc(20% - 6px);
   position: fixed;
-  top: 220px;
+  top: 32vh;
   z-index: 1;
-  width: 20%;
+  width: 19.7%;
   margin: 0;
   padding-left: 0;
   padding-right: 0;
   background-color: rgba(255, 255, 255, 0.651);
   border: none;
+  margin: auto 0;
 }
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper {
