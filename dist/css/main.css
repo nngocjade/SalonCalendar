@@ -347,7 +347,7 @@ button a {
 .schedule_wrapper .col.wrapper .technician.btn {
   width: calc(20% - 6px);
   position: fixed;
-  top: 32vh;
+  top: 31vh;
   z-index: 1;
   width: 19.7%;
   margin: 0;
@@ -362,6 +362,23 @@ button a {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.747);
+}
+
+.schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot {
+  width: calc(100% - 16px);
+  height: 16px;
+  padding: 8px;
+  background-color: darkgoldenrod;
+}
+
+.schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot:hover {
+  background-color: honeydew;
+}
+
+.schedule_wrapper .col.wrapper .time_slot.wrapper .fifteen_min_increment {
+  height: 1.5px;
+  padding: 0 8px;
+  background-color: gray;
 }
 
 .am,
