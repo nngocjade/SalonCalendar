@@ -8,4 +8,9 @@
      // attach click-listener
       // on-click- preview appointment details
         // (appointment detail pop up includes:
-             // )
+             // Client First and Last Name
+             // DD/MM/YYYY
+             // Service
+             // Time
+             // *Note, with some details
+             // cancel and edit button)

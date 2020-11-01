@@ -361,14 +361,12 @@ button a {
 .schedule_wrapper .col.wrapper .time_slot.wrapper {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.747);
 }
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot {
   width: calc(100% - 16px);
   height: 20px;
   padding: 8px;
-  background-color: darkgoldenrod;
 }
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot:hover {
@@ -378,7 +376,7 @@ button a {
 .schedule_wrapper .col.wrapper .time_slot.wrapper .fifteen_min_increment {
   height: 1.5px;
   padding: 0 8px;
-  background-color: gray;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .am,
