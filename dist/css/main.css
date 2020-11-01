@@ -366,7 +366,7 @@ button a {
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot {
   width: calc(100% - 16px);
-  height: 16px;
+  height: 20px;
   padding: 8px;
   background-color: darkgoldenrod;
 }
