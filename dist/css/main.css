@@ -331,11 +331,9 @@ button a {
 
 .schedule_wrapper .hour_wrapper .fifteen,
 .schedule_wrapper .hour_wrapper .fortyFive {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 1.5px;
-  text-align: center;
-  background-color: gray;
+  padding: 0 8px;
+  height: 2.5px;
+  background-color: transparent;
 }
 
 .schedule_wrapper .col.wrapper {
