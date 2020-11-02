@@ -302,8 +302,8 @@ button a {
           justify-content: space-between;
   position: absolute;
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(150%, #f5d8ff));
-  background: linear-gradient(0deg, white 0%, #f5d8ff 150%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, white), color-stop(110%, #f5d8ff));
+  background: linear-gradient(0deg, white 60%, #f5d8ff 110%);
 }
 
 .schedule_wrapper {
@@ -329,6 +329,10 @@ button a {
   height: 100%;
 }
 
+.schedule_wrapper .hour_wrapper li {
+  color: #e8a5ff;
+}
+
 .schedule_wrapper .hour_wrapper .fifteen,
 .schedule_wrapper .hour_wrapper .fortyFive {
   padding: 0 8px;
@@ -351,8 +355,10 @@ button a {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
-  background-color: rgba(255, 255, 255, 0.651);
+  background-color: rgba(255, 255, 255, 0.795);
   border: none;
+  color: #f1c9ff;
+  font-size: 18px;
   margin: auto 0;
 }
 
@@ -368,7 +374,7 @@ button a {
 }
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper .time_slot:hover {
-  background-color: honeydew;
+  background-color: #faecff;
 }
 
 .schedule_wrapper .col.wrapper .time_slot.wrapper .fifteen_min_increment {

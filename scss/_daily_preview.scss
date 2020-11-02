@@ -8,8 +8,8 @@
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(245, 216, 255, 1) 150%
+    rgba(255, 255, 255, 1) 60%,
+    rgba(245, 216, 255, 1) 110%
   );
 }
 .schedule_wrapper {
@@ -19,6 +19,9 @@
   @include flexBox(row, space-between, center);
   .hour_wrapper {
     height: 100%;
+    li {
+      color: darken($color: $accentColor, $amount: 10%);
+    }
     .fifteen,
     .fortyFive {
       padding: 0 8px;
@@ -44,8 +47,12 @@
       margin: 0;
       padding-left: 0;
       padding-right: 0;
-      background-color: rgba(255, 255, 255, 0.651);
+      background-color: rgba(255, 255, 255, 0.795);
+      // border: 1.5px solid $accentColor;
       border: none;
+      color: darken($color: $accentColor, $amount: 3%);
+      font-size: 18px;
+      // border: none;
       margin: auto 0;
     }
     .time_slot.wrapper {
@@ -58,7 +65,7 @@
         padding: 8px;
         // background-color: darkgoldenrod;
         &:hover {
-          background-color: honeydew;
+          background-color: lighten($color: $accentColor, $amount: 4%);
         }
       }
       .fifteen_min_increment {
