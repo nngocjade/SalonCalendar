@@ -380,7 +380,7 @@ button a {
 .schedule_wrapper .col.wrapper .time_slot.wrapper .fifteen_min_increment {
   height: 1.5px;
   padding: 0 8px;
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .am,

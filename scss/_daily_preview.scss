@@ -71,7 +71,7 @@
       .fifteen_min_increment {
         height: 1.5px;
         padding: 0 8px;
-        border-bottom: 1px solid $lightGray;
+        border-bottom: 1px solid lighten($color: $lightGray, $amount: 10%);
         // background-color: gray;
       }
     }
