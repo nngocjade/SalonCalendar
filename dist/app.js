@@ -15,22 +15,22 @@
              // *Note, with some details
              // cancel and edit button)
 
-let openTimeSlot = document.getElementById("timeSlot");
+let slotWrapper = document.getElementById("timeslot");
+let openTimeSlot = document.getElementById("timeslot");
 
-openTimeSlot.addEventListener("click", openScheduleForm);
+openTimeSlot.addEventListener("click", openForm);
 
-// function openForm(){
-//  openScheduleForm();
-// }
+function openForm(){
+  slotWrapper.innerHTML = "";
+ openScheduleForm();
+ console.log("green");
+}
 
 function openScheduleForm(){
- console.log("green");
  let apptModalWrapper = document.createElement("div");
   apptModalWrapper.classList.add("modal_wrapper");
   apptModalWrapper.setAttribute("id", "modal_wrapper");
 
-let slotWrapper = document.getElementById("timeSlot");
- slotWrapper.appendChild(apptModalWrapper);
-
-
+  slotWrapper.appendChild(apptModalWrapper);
 };
+
