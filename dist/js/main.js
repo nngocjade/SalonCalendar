@@ -15,7 +15,6 @@
              // *Note, with some details
              // cancel and edit button)
 
-let slotWrapper = document.getElementById("timeslot");
 let timeSlot = document.getElementById("timeslot");
 let modalWindow = document.getElementById("modal_window");
 
@@ -23,20 +22,21 @@ timeSlot.addEventListener("click", openForm);
 window.addEventListener("click", outsideClickCloseForm);
 
 function openForm(){
-  slotWrapper.innerHTML = "";
- 
+
   openScheduleForm();
- 
-  console.log("green");
+
+  console.log("green")
 }
 
 function openScheduleForm(){
  modalWindow.style.display = "block";
+ document.getElementById("dailyPreviewContainer").style.opacity = 1;
 };
 
 function outsideClickCloseForm(event){
   if(event.target == modalWindow){
     modalWindow.style.display = "none";
+    document.getElementById("dailyPreviewContainer").style.opacity = 1;
   }
 }
 

@@ -260,10 +260,6 @@ button a {
   width: calc(100% - 1em);
 }
 
-.form_container form .label_input_wrapper #optional {
-  font-size: 0.8em;
-}
-
 @media screen and (min-width: 900px) {
   .form_container form .label_input_wrapper {
     -webkit-box-orient: horizontal;
@@ -350,7 +346,6 @@ button a {
   width: calc(20% - 6px);
   position: fixed;
   top: 31vh;
-  z-index: 1;
   width: 19.7%;
   margin: 0;
   padding-left: 0;
@@ -390,6 +385,7 @@ button a {
 }
 
 .modal_window {
+  display: none;
   height: 100vh;
   width: 100vw;
   background-color: green;
