@@ -16,16 +16,16 @@
              // cancel and edit button)
 
 let timeSlot = document.getElementById("timeslot");
-let modalWindow = document.getElementById("modal_window");
+let modalWindow = document.getElementById("modalWindow");
+
+let timeSlotTaken = document.getElementById("appt")
+let modalWindowPreview = document.getElementById("modalWindowPreview");
 
 timeSlot.addEventListener("click", openForm);
 window.addEventListener("click", outsideClickCloseForm);
 
 function openForm(){
-
   openScheduleForm();
-
-  console.log("green")
 }
 
 function openScheduleForm(){
