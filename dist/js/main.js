@@ -32,7 +32,9 @@ timeSlot.addEventListener("click", openModalForm);
 window.addEventListener("click", outsideClickCloseModalWindow);
 
 function openModalWindow(){
- modalWindow.style.display = "block";   
+ modalWindow.style.display = "flex";
+ modalWindow.style.alignItems = "center";
+ modalWindow.style.justifyContent = "center"; 
 };
 
 function outsideClickCloseModalWindow(event){
@@ -68,15 +70,18 @@ function createForm(){
   icon.classList.add("fa");
   icon.classList.add("fa-clock-o");
 
-  iconDateWrapper.appendChild(icon);
-
   let input = document.createElement("input");
   input.classList.add("date_input");
   input.setAttribute("type", "date");
   input.setAttribute("name", "date");
   input.setAttribute("id", "date");
 
+  iconDateWrapper.appendChild(icon);
   iconDateWrapper.appendChild(input);
+
+  // let apptWrapper = document.creat
+
+
 
 
 
