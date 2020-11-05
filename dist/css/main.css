@@ -80,6 +80,7 @@ button a {
   -webkit-box-shadow: 1px 1px 20px 4px #d6d6d6;
           box-shadow: 1px 1px 20px 4px #d6d6d6;
   color: #d6d6d6;
+  background-color: white;
 }
 
 @media screen and (min-width: 900px) {
@@ -393,10 +394,20 @@ button a {
   z-index: 1;
   top: 0;
   left: 0;
+  margin: auto 0;
 }
 
 .modal_window {
-  background-color: #f5d8ff;
+  background-color: rgba(255, 255, 255, 0.603);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal_window_preview {

@@ -18,6 +18,7 @@
 
 // MAIN MODAL FORM FUNCTION
 function openModalForm(){
+  createForm();
   openModalWindow();
 }
 
@@ -31,8 +32,7 @@ timeSlot.addEventListener("click", openModalForm);
 window.addEventListener("click", outsideClickCloseModalWindow);
 
 function openModalWindow(){
- modalWindow.style.display = "block";
- document.getElementById("dailyPreviewContainer").style.opacity = 1;
+ modalWindow.style.display = "block";   
 };
 
 function outsideClickCloseModalWindow(event){
@@ -44,7 +44,11 @@ function outsideClickCloseModalWindow(event){
 
 // APPOINTMENT FORM 
 function createForm(){
+
+  console.log(createForm);
+
   let formContainer = document.getElementById("formContainer");
+  formContainer.innerHTML = "";
   let form = document.createElement("form");
   form.setAttribute("action", '" "');
 
@@ -55,6 +59,27 @@ function createForm(){
   
   form.appendChild(dateTimeWrapper);
 
-  
+  let iconDateWrapper = document.createElement("div");
+  iconDateWrapper.classList.add("icon_date_wrapper");
+
+  dateTimeWrapper.appendChild(iconDateWrapper);
+
+  let icon = document.createElement("i");
+  icon.classList.add("fa");
+  icon.classList.add("fa-clock-o");
+
+  iconDateWrapper.appendChild(icon);
+
+  let input = document.createElement("input");
+  input.classList.add("date_input");
+  input.setAttribute("type", "date");
+  input.setAttribute("name", "date");
+  input.setAttribute("id", "date");
+
+  iconDateWrapper.appendChild(input);
+
+
+
+
 }
 
