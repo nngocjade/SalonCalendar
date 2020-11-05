@@ -15,28 +15,33 @@
              // *Note, with some details
              // cancel and edit button)
 
+
+// MAIN MODAL FORM FUNCTION
+function openModalForm(){
+  openModalWindow();
+}
+
 let timeSlot = document.getElementById("timeslot");
 let modalWindow = document.getElementById("modalWindow");
 
 let timeSlotTaken = document.getElementById("appt")
 let modalWindowPreview = document.getElementById("modalWindowPreview");
 
-timeSlot.addEventListener("click", openForm);
-window.addEventListener("click", outsideClickCloseForm);
+timeSlot.addEventListener("click", openModalForm);
+window.addEventListener("click", outsideClickCloseModalWindow);
 
-function openForm(){
-  openScheduleForm();
-}
-
-function openScheduleForm(){
+function openModalWindow(){
  modalWindow.style.display = "block";
  document.getElementById("dailyPreviewContainer").style.opacity = 1;
 };
 
-function outsideClickCloseForm(event){
+function outsideClickCloseModalWindow(event){
   if(event.target == modalWindow){
     modalWindow.style.display = "none";
     document.getElementById("dailyPreviewContainer").style.opacity = 1;
   }
 }
+
+// APPOINTMENT FORM 
+
 
