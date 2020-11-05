@@ -43,5 +43,18 @@ function outsideClickCloseModalWindow(event){
 }
 
 // APPOINTMENT FORM 
+function createForm(){
+  let formContainer = document.getElementById("formContainer");
+  let form = document.createElement("form");
+  form.setAttribute("action", '" "');
 
+  formContainer.appendChild(form);
+
+  let dateTimeWrapper = document.createElement("div");
+  dateTimeWrapper.classList.add("dateTime_wrapper");
+  
+  form.appendChild(dateTimeWrapper);
+
+  
+}
 
